@@ -1,0 +1,10 @@
+*:required::before{
+    content: "*";
+    color: red;
+}
+
+.invalid{
+    border-color: red;
+    border-radius: 0.25rem;
+    background-color: lightpink;
+}

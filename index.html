@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Finance Perso</title>
+</head>
+<body>
+    <h1>Finance Perso</h1>
+    <section id="saisie">
+        <form action="">
+            <div id="input-type">
+                <label for="type">
+                    Type de depense
+                </label>
+                <select id="type" name="type" required>
+                    <option value="">Choisir le type de depense</option>
+                    <option value="alientation">Alientation</option>
+                    <option value="vetements">Vetements</option>
+                    <option value="loisirs">Loisirs</option>
+                    <option value="loyer">Loyer</option>
+                </select>
+            </div>
+            <div id="input-montant">
+                <label for="montant">
+                    Montant de depense
+                </label>
+                <input id="montant" name="montant" type="number" value="0" required>
+            </div>
+            <div id="input-date">
+                <label for="date">
+                    Date de depense
+                </label>
+                <input id="date" name="date" type="date" required>
+            </div>
+            <button id="btn-soumettre" type="button" onclick="saveData();">
+                Ajouter depense
+            </button>
+        </form>
+    </section>
+    <section id="affichage">
+        <table id="depenses">
+            <thead>
+                <tr>
+                    <th>Id</th>
+                    <th>Date</th>
+                    <th>Type</th>
+                    <th>Montant</th>
+                    <th>Supprimer</th>
+                </tr>
+            </thead>
+            <tbody>
+            </tbody>
+        </table>
+    </section>
+    <script src="./gestionfin.js"></script>
+</body>
+</html>
